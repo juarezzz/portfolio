@@ -8,10 +8,14 @@
 }
 
 .intro {
-    width: 800px;
+    max-width: 800px;
     font-size: 36px;
     font-weight: 700;
     color: var(--text-color);
+}
+
+.intro h1 {
+    display: inline;
 }
 
 .clip-background {
@@ -44,6 +48,16 @@
     top: 0;
 }
 
+.blinking-cursor {
+    font-size: 70px;
+    animation: Blink 850ms infinite steps(1, start);
+}
+
+@keyframes Blink {
+    50% {
+        opacity: 0;
+    }
+}
 
 @keyframes MoveBackground {
     0% {

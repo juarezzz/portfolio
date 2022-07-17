@@ -4,7 +4,7 @@ import { useRouter } from 'next/router';
 
 function Navbar() {
     const router = useRouter()
-    console.log(router.pathname)
+
     return (
         <nav className={styles.navbar}>
             <div className={styles['link-list']}>
