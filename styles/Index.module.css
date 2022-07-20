@@ -1,6 +1,6 @@
 .container {
     width: 100%;
-    height: calc(100% - var(--navbar-height));
+    height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -9,13 +9,12 @@
 
 .intro {
     max-width: 800px;
-    font-size: 36px;
-    font-weight: 700;
     color: var(--text-color);
 }
 
-.intro h1 {
-    display: inline;
+.intro span {
+    font-size: 56px;
+    font-weight: 700;
 }
 
 .clip-background {
@@ -50,7 +49,7 @@
 
 .blinking-cursor {
     font-size: 70px;
-    animation: Blink 850ms infinite steps(1, start);
+    animation: Blink 850ms infinite steps(1, start) 6.5s;
 }
 
 @keyframes Blink {
