@@ -1,11 +1,9 @@
 :root {
+  --black: #02020B;
   --navbar-height: 55px;
-  --navbar-color: #02020B;
+  --navbar-color: var(--black);
   --background-color: #10DD8F;
-  --text-color: #02020B;
-  --gradient-background: linear-gradient(217deg, rgb(137, 0, 250), rgba(255, 0, 0, 0) 70.71%),
-    linear-gradient(127deg, rgb(39, 168, 228), rgba(255, 0, 0, 0) 70.71%),
-    linear-gradient(336deg, rgb(216, 29, 207), rgba(255, 0, 0, 0) 70.71%);
+  --text-color: var(--black);
 }
 
 html,
@@ -26,6 +24,12 @@ a {
   margin: 0;
   border: none;
   outline: none;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
 }
 
 ::-webkit-scrollbar {

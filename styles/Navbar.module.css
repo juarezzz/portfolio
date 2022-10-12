@@ -23,7 +23,7 @@
     font-size: 0.9em;
     font-weight: 700;
     height: 100%;
-    width: 100px;
+    min-width: 100px;
     transition: font-size 200ms ease-in;
 }
 
@@ -34,4 +34,34 @@
 
 .link-list button:hover {
     font-size: 1.1em;
+}
+
+@media (max-width: 500px) {
+    .link-list button {
+        font-size: 0.6em;
+        min-width: 60px;
+    }
+
+    .link-list .active-link {
+        font-size: 0.7em;
+    }
+
+    .link-list button:hover {
+        font-size: 0.7em;
+    }
+}
+
+@media (min-width: 1800px) {
+    .link-list button {
+        font-size: 1.3em;
+        min-width: 120px;
+    }
+
+    .link-list .active-link {
+        font-size: 1.5em;
+    }
+
+    .link-list button:hover {
+        font-size: 1.5em;
+    }
 }

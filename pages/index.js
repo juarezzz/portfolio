@@ -4,12 +4,22 @@ import { useState, useEffect, useRef } from 'react'
 import typeText from '../utils/typeText'
 
 export default function Home() {
-  const [animate, setAnimate] = useState(false)
+  const [imageSrc, setImageSrc] = useState('/imgs/waving.png')
 
   const refEl = useRef([])
+  const animateDiv = useRef()
 
   useEffect(() => {
-    setAnimate(true);
+    setTimeout(() => {
+      animateDiv.current.classList.add(styles.animate)
+      setImageSrc('/imgs/waving.gif')
+    }, 100)
+    setTimeout(() => {
+      setImageSrc('/imgs/waving.png')
+    }, 4200)
+  }, [])
+
+  useEffect(() => {
     const startTyping = async () => {
       try {
         await typeText(refEl.current[0], 'Olá, meu nome é Juarez e eu sou um Desenvolvedor ');
@@ -17,7 +27,9 @@ export default function Home() {
         await typeText(refEl.current[2], 'Stack');
       } catch (error) { return; }
     }
-    startTyping();
+    setTimeout(() => {
+      startTyping();
+    }, 2000);
   }, []);
 
   return (
@@ -30,13 +42,14 @@ export default function Home() {
         <span className={styles['blinking-cursor']}>|</span>
       </div>
 
-      <div className={`${styles['clip-background']} ${animate ? styles['animate'] : ''}`} >
-        <div className={`${styles['image-container']} ${animate ? styles['animate'] : ''}`}>
+      <div className={`${styles['clip-background']}`} ref={animateDiv}>
+        <div className={`${styles['image-container']}`}>
           <Image
-            src='/eminem.png'
-            alt='Uma foto minha'
-            width={1000}
-            height={1000}
+            priority
+            src={imageSrc}
+            alt=''
+            width={800}
+            height={800}
           />
         </div>
       </div>

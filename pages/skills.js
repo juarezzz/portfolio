@@ -11,14 +11,15 @@ function Skills() {
     }, []);
 
     return (
-        <div className={styles.container}>
-            <h2>O que eu sei</h2>
+        <div>
+            <h2 className={styles.title}>O QUE EU SEI</h2>
             <div className={styles.grid} ref={cardGrid}>
                 <Card src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg' label="Python" />
                 <Card src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg' label="HTML" />
                 <Card src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg' label="CSS" />
                 <Card src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg' label="Bootstrap" />
                 <Card src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg' label="JavaScript" />
+                <Card src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg' label="TypeScript" />
                 <Card src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg' label="NodeJS" />
                 <Card src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg' label="ExpressJS" />
                 <Card src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg' label="ReactJS" />
@@ -32,7 +33,6 @@ function Skills() {
             </div>
             {/* <h2>O que estou aprendendo / vou aprender em seguida:</h2>
             <div className={styles.grid}>
-                <Card src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg' label="Typescript"/>
                 <Card src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg' label="Jest"/>
                 <Card src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg' label="GraphQL"/>
             </div> */}

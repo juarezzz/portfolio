@@ -8,7 +8,7 @@ const flipCards = (cards) => {
         if (i === cards.length) {
             clearInterval(interval);
         }
-    }, 150)
+    }, 175)
 }
 
 export default flipCards;

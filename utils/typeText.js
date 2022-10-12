@@ -4,7 +4,6 @@ const typeText = (el, text) => {
         let displayText = '';
         const interval = setInterval(() => {
             displayText = text.substring(0, i);
-
             try {
                 el.innerText = displayText;
             } catch (error) {
@@ -18,7 +17,7 @@ const typeText = (el, text) => {
             }
 
             i++;
-        }, 100)
+        }, 90)
     })
 }
 

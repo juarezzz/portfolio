@@ -1,14 +1,19 @@
 .card {
     width: 125px;
-    background-color: #ffffff;
-    color: var(--text-color);
+    height: 160px;
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
     border-radius: 5px;
     text-align: center;
-    padding: 15px 0;
     border: 2px solid var(--text-color);
     transform: rotateY(0.5turn);
     backface-visibility: hidden;
     transform-style: preserve-3d;
+    padding: 0 10px;
 }
 
 .card span {
@@ -25,14 +30,19 @@
     bottom: 0px;
     top: 0px;
     left: 0px;
-    transform: rotateY(180deg);
     transform-style: preserve-3d;
     background-color: transparent;
-    backface-visibility: hidden;
+
 }
 
 .card.animate {
     animation: Flip 500ms ease-out forwards;
+}
+
+.imageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @keyframes Flip {

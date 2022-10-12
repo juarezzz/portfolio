@@ -19,21 +19,21 @@ function Navbar() {
                     <button
                         className={router.pathname === '/skills' ? styles['active-link'] : ''}
                     >
-                        SKILLS
+                        HABILIDADES
                     </button>
                 </Link>
                 <Link href='/projects'>
                     <button
                         className={router.pathname === '/projects' ? styles['active-link'] : ''}
                     >
-                        PROJECTS
+                        PROJETOS
                     </button>
                 </Link>
                 <Link href='/contact'>
                     <button
                         className={router.pathname === '/contact' ? styles['active-link'] : ''}
                     >
-                        CONTACT
+                        CONTATO
                     </button>
                 </Link>
             </div>

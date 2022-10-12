@@ -4,12 +4,14 @@ import styles from '../styles/Card.module.css'
 function Card({ src, label }) {
     return (
         <div className={styles.card}>
-            <Image
-                height={60}
-                width={60}
-                alt=''
-                src={src}
-            />
+            <div className={styles.imageContainer}>
+                <Image
+                    height={50}
+                    width={50}
+                    alt={label + ' logo'}
+                    src={src}
+                />
+            </div>
             <span>{label}</span>
         </div>
     )
